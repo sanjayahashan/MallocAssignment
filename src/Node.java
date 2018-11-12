@@ -1,12 +1,15 @@
 
 public class Node <T> {
-	public T data;
+	public int start;
+	public int length;
+	public char status = 'h';
 	public Node<T> next = null;
 	public Node<T> prev = null;
 	
-	Node(T data)
+	Node(int size, char status)
 	{
-		this.data = data;
+		this.length = size;
+		this.status = status;
 	}
 	
 //	public static void main(String srgs[])
